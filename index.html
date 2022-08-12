@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
     <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -23,5 +29,113 @@
         </nav>
       </div>
     </header>
+
+    <main>
+      <div class="container container-articles">
+        <div class="main-content">
+          <article class="main-article border-bottom-separator">
+            <img src="images/life.jpg" alt="minimalist decoration" />
+            <p class="date">July 23, 2019 | 3 comments</p>
+            <h2>Finding simplicity in life</h2>
+            <p class="article-text">
+              <span class="emphasis">
+                Life can get complicated really quickly
+              </span>
+              , but it doesn't have to be! There are many ways to simplify your
+              life, <a href="#">a few of which we've explored in the past</a>.
+              This week we're taking a bit of a approach though, in how you can
+              find simplicity in the life you already living.
+            </p>
+            <p class="continue-reading">continue reading</p>
+          </article>
+
+          <article class="side-article">
+            <div class="side-article-img-container">
+              <img src="images/food.jpg" alt="delicious dish" />
+              <p class="date">July 23, 2019 | 3 comments</p>
+            </div>
+            <div class="side-article-text">
+              <h2>Keeping cooking simple</h2>
+              <p>
+                Food is a very important part of everyone's life. If you want to
+                be healthy, you have to eat healthy. One of the easiest ways to
+                do that is to keep your cooking nice and simple.
+              </p>
+              <p class="continue-reading">continue reading</p>
+            </div>
+          </article>
+
+          <article class="side-article">
+            <div class="side-article-img-container">
+              <img src="images/work.jpg" alt="ergonomic desk" />
+              <p class="date">July 23, 2019 | 3 comments</p>
+            </div>
+            <div class="side-article-text">
+              <h2>Simplicity and work</h2>
+              <p>
+                Work is often a major source of stress. People get frustrated,
+                it ruins their relationship with others and it leads to burnout.
+                By keeping your work life as simple as possible, it will help
+                balance everything out.
+              </p>
+              <p class="continue-reading">continue reading</p>
+            </div>
+          </article>
+
+          <article class="side-article">
+            <div class="side-article-img-container">
+              <img src="images/deco.jpg" alt="delicious dish" />
+              <p class="date">July 23, 2019 | 3 comments</p>
+            </div>
+            <div class="side-article-text">
+              <h2>Simple decorations</h2>
+              <p>
+                A home isn't a home until you've decorated a little. People
+                either don't decorate, or they go overboard and it doesn't have
+                the impact they were hoping for. Staying simple will help draw
+                the eye where you want it to and make things pop like never
+                before.
+              </p>
+              <p class="continue-reading">continue reading</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="side-bar">
+          <article class="about-me big-border">
+            <h2 class="side-bar-titles">About Me</h2>
+            <img src="images/about-me.jpg" alt="young man smiling" />
+            <p class="about-me-description">
+              I find life better, and I'm happier, when things are nice and
+              simple.
+            </p>
+          </article>
+
+          <article class="recent-posts big-border">
+            <h2 class="side-bar-titles">Recent Posts</h2>
+
+            <article class="post border-bottom-separator">
+              <img src="images/food.jpg" alt="delicious dish" />
+              <h3>Keeping cooking simple</h3>
+            </article>
+
+            <article class="post border-bottom-separator">
+              <img src="images/work.jpg" alt="delicious dish" />
+              <h3>Simplicity and work</h3>
+            </article>
+
+            <article class="post">
+              <img src="images/deco.jpg" alt="delicious dish" />
+              <h3>Simple decorations</h3>
+            </article>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer-text">Living the Simple Life</p>
+      <p class="copy">&copy; Copyright 2022</p>
+    </footer>
   </body>
 </html>

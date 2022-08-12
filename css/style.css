@@ -4,6 +4,8 @@
 
 body {
   margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  text-align: justify;
 }
 
 /* ==========
@@ -21,9 +23,78 @@ body {
   justify-content: space-between;
 }
 
+.container-articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 header {
   padding: 3em 0;
   background-color: gainsboro;
+}
+
+main {
+  margin: 4em 0;
+}
+
+img {
+  width: 100%;
+}
+
+.main-content {
+  width: 75%;
+}
+
+.side-article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.side-article-img-container {
+  width: 35%;
+}
+
+.side-article-text {
+  width: 60%;
+}
+
+.side-article-text h2 {
+  margin: 0;
+}
+
+.side-bar {
+  width: 20%;
+}
+
+.big-border {
+  padding: 1.5em;
+  border: 1.25em solid #ebebeb;
+}
+
+.big-border h2 {
+  margin-top: 0;
+}
+
+.recent-posts {
+  margin-top: 2.8125em;
+}
+
+.post + .post {
+  margin-top: 1.5em;
+}
+
+.border-bottom-separator {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+  padding-bottom: 0.5em;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #143774;
+  padding: 2em 0;
 }
 
 /* NAVIGATION */
@@ -61,11 +132,37 @@ nav a:focus {
 ========== */
 
 h1 {
+  font-family: "Lora", serif;
   font-weight: 400;
   color: #143774;
   margin: 0;
 }
 
+h2 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+}
+
+/* H2 */
+.side-bar-titles {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.article-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* PAGE SUBTITLE */
 .subtitle {
   font-size: 0.75rem;
   font-weight: 700;
@@ -74,11 +171,32 @@ h1 {
   text-transform: uppercase;
 }
 
+.date {
+  font-size: 0.875rem;
+  color: #707070;
+}
+
+.continue-reading {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1792d2;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  font-weight: 700;
+  margin: 0;
+}
+
+.copy {
+  margin: 0;
+}
+
 /* ==========
   MEDIA QUERIES
 ========== */
 
-@media (orientation: portrait) {
+@media (max-width: 675px) {
   .container-nav {
     flex-direction: column;
   }
