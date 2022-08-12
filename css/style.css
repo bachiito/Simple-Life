@@ -4,8 +4,82 @@
 
 body {
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
   text-align: justify;
+  font-weight: 300;
+  font-size: 1.125rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* ==========
+  TYPOGRAPHY 
+========== */
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* H2 */
+.sidebar-titles {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* H1 SUBTITLE */
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1792d2;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.article-info,
+.continue-reading {
+  font-size: 0.875rem;
+}
+
+.continue-reading {
+  color: #1792d2;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.continue-reading:hover,
+.continue-reading:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+.footer-text {
+  font-weight: 700;
+  margin: 0;
+}
+
+.copy {
+  margin: 0;
 }
 
 /* ==========
@@ -64,7 +138,7 @@ img {
   margin: 0;
 }
 
-.side-bar {
+.sidebar {
   width: 20%;
 }
 
@@ -87,7 +161,7 @@ img {
 
 .border-bottom-separator {
   border-bottom: 1px solid rgba(112, 112, 112, 0.5);
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
 }
 
 footer {
@@ -125,71 +199,6 @@ nav a:focus {
 
 .current-page:hover {
   color: #707070;
-}
-
-/* ==========
-  TYPOGRAPHY 
-========== */
-
-h1 {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  color: #143774;
-  margin: 0;
-}
-
-h2 {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  color: #143774;
-}
-
-h3 {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  color: #143774;
-}
-
-/* H2 */
-.side-bar-titles {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.article-text {
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-
-/* PAGE SUBTITLE */
-.subtitle {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #1792d2;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.date {
-  font-size: 0.875rem;
-  color: #707070;
-}
-
-.continue-reading {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #1792d2;
-  text-transform: uppercase;
-}
-
-.footer-text {
-  font-weight: 700;
-  margin: 0;
-}
-
-.copy {
-  margin: 0;
 }
 
 /* ==========
