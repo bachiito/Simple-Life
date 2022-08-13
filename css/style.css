@@ -24,6 +24,7 @@ h3 {
   font-family: "Lora", serif;
   font-weight: 400;
   color: #143774;
+  margin-top: 0;
 }
 
 h1 {
@@ -34,11 +35,6 @@ a {
   color: #1792d2;
 }
 
-a:hover,
-a:focus {
-  color: #143774;
-}
-
 strong {
   font-weight: 700;
 }
@@ -47,7 +43,9 @@ strong {
 .sidebar-titles {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+  font-size: 1.3rem;
   text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 /* H1 SUBTITLE */
@@ -71,18 +69,8 @@ strong {
   text-decoration: none;
 }
 
-.continue-reading:hover,
-.continue-reading:focus {
-  color: #143774;
-  text-decoration: underline;
-}
-
-.footer-text {
-  font-weight: 700;
-  margin: 0;
-}
-
-.copy {
+.small {
+  font-size: 0.75rem;
   margin: 0;
 }
 
@@ -111,38 +99,17 @@ main {
   margin: 3em 0;
 }
 
-.side-article {
-  margin-top: 3em;
-}
-
-.side-article-text h2 {
-  margin: 0;
-}
-
-.big-border {
-  padding: 1.5em;
-  margin-top: 2.8125em;
-  border: 1.25em solid #ebebeb;
-}
-
-.big-border h2 {
-  margin-top: 0;
-}
-
-.post + .post {
-  margin-top: 1.5em;
+footer {
+  text-align: center;
+  color: grey;
+  background-color: #143774;
+  padding: 1.5em 0;
 }
 
 .border-bottom-separator {
-  padding-bottom: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
   border-bottom: 1px solid rgba(112, 112, 112, 0.5);
-}
-
-footer {
-  text-align: center;
-  color: white;
-  background-color: #143774;
-  padding: 2em 0;
 }
 
 /* NAVIGATION */
@@ -153,6 +120,7 @@ nav ul {
   gap: 1em;
   list-style: none;
   margin-top: 2em;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -164,17 +132,34 @@ nav a {
   padding: 0.25em 0;
 }
 
-nav a:hover,
-nav a:focus {
-  color: #143774;
-}
-
 .current-page {
   border-bottom: 1.5px solid #707070;
 }
 
-.current-page:hover {
-  color: #707070;
+/* ARTICLES */
+
+.side-article {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 2.5em 0;
+}
+
+/* SIDEBAR */
+
+.big-border {
+  padding: 1.5em;
+  border: 20px solid #ebebeb;
+}
+
+.recent-posts {
+  margin-top: 2.5em;
+}
+
+.post {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1em;
+  margin-top: 2em;
 }
 
 /* ==========
@@ -182,4 +167,101 @@ nav a:focus {
 ========== */
 
 @media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  nav ul {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .main-content {
+    width: 70%;
+  }
+
+  .side-article {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .side-article-text {
+    width: 70%;
+  }
+
+  .side-article-img-container {
+    width: 25%;
+  }
+
+  .side-article-img-container img {
+    min-height: 250px;
+    object-fit: cover;
+  }
+
+  .sidebar {
+    width: 25%;
+    min-width: 225px;
+    margin-left: 1em;
+  }
+
+  .sidebar .about-me {
+    margin: 0;
+  }
+}
+
+@media (hover: hover) {
+  nav a:hover,
+  nav a:focus {
+    color: #143774;
+  }
+
+  .current-page:hover {
+    color: #707070;
+  }
+
+  a:hover,
+  a:focus {
+    color: #143774;
+  }
+
+  a.github:focus-visible {
+    outline: none;
+  }
+
+  .continue-reading:hover,
+  .continue-reading:focus {
+    color: #143774;
+    text-decoration: underline;
+  }
+
+  a.github:focus-visible .g-github {
+    fill: #ff4b00;
+  }
+
+  svg.github:hover .g-github {
+    fill: white;
+  }
+
+  .small:hover {
+    color: white;
+  }
+
+  .small:hover .g-heart {
+    fill: #ff4b00;
+  }
+
+  .small:hover .svg-heart {
+    animation: heart-beat 0.5s linear forwards infinite alternate;
+  }
+
+  @keyframes heart-beat {
+    100% {
+      transform: scale(1.25);
+    }
+  }
 }
