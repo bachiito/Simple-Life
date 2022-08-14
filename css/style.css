@@ -27,8 +27,11 @@ h3 {
   margin-top: 0;
 }
 
-h1 {
-  margin: 0;
+h1,
+h3,
+.article-info,
+.about-me-description {
+  margin-bottom: 0;
 }
 
 a {
