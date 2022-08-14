@@ -29,7 +29,6 @@ h3 {
 
 h1,
 h3,
-.article-info,
 .about-me-description {
   margin-bottom: 0;
 }
@@ -99,7 +98,7 @@ header {
 }
 
 main {
-  margin: 3em 0;
+  margin: 2em 0;
 }
 
 footer {
@@ -110,7 +109,6 @@ footer {
 }
 
 .border-bottom-separator {
-  margin-bottom: 2em;
   padding-bottom: 2em;
   border-bottom: 1px solid rgba(112, 112, 112, 0.5);
 }
@@ -144,18 +142,15 @@ nav a {
 .side-article {
   display: flex;
   flex-direction: column-reverse;
-  margin: 2.5em 0;
+  margin-top: 2em;
 }
 
 /* SIDEBAR */
 
 .big-border {
+  margin-top: 2.5em;
   padding: 1.5em;
   border: 20px solid #ebebeb;
-}
-
-.recent-posts {
-  margin-top: 2.5em;
 }
 
 .post {
@@ -193,6 +188,10 @@ nav a {
     justify-content: space-between;
   }
 
+  .article-info {
+    margin-bottom: 0;
+  }
+
   .side-article-text {
     width: 70%;
   }
@@ -209,7 +208,7 @@ nav a {
   .sidebar {
     width: 25%;
     min-width: 225px;
-    margin-left: 1em;
+    margin-left: 1.5em;
   }
 
   .sidebar .about-me {
