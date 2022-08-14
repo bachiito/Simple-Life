@@ -174,9 +174,16 @@ nav a {
     text-align: left;
   }
 
+  nav {
+    display: flex;
+  }
+
   nav ul {
+    align-self: center;
     flex-direction: row;
+    min-width: 320px;
     margin: 0;
+    margin-left: 0.75em;
   }
 
   .main-content {
