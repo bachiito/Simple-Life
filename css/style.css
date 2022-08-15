@@ -14,6 +14,15 @@ img {
   max-width: 100%;
 }
 
+/* ABOUT ME PAGE IMG */
+
+.image-full {
+  max-height: 308px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
+
 /* ==========
   TYPOGRAPHY 
 ========== */
@@ -29,8 +38,15 @@ h3 {
 
 h1,
 h3,
-.about-me-description {
+.about-me-description,
+.about-me-last-p {
   margin-bottom: 0;
+}
+
+/* ABOUT ME PAGE */
+
+h3.about-me {
+  color: #1792d2;
 }
 
 a {
@@ -98,7 +114,7 @@ header {
 }
 
 main {
-  margin: 2em 0;
+  margin: 2.5em 0;
 }
 
 footer {
@@ -174,12 +190,14 @@ nav a {
     text-align: left;
   }
 
+  /* TO CENTER THE NAV UL */
+
   nav {
     display: flex;
+    align-items: center;
   }
 
   nav ul {
-    align-self: center;
     flex-direction: row;
     min-width: 320px;
     margin: 0;
@@ -193,6 +211,12 @@ nav a {
   .side-article {
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  /* FOR RECENT POSTS PAGE */
+
+  .first-article {
+    margin-top: 0;
   }
 
   .article-info {
@@ -216,6 +240,12 @@ nav a {
     width: 25%;
     min-width: 225px;
     margin-left: 1.5em;
+  }
+
+  /* FOR ABOUT ME PAGE */
+
+  .about-me-sidebar {
+    margin-top: 0;
   }
 
   .sidebar .about-me {
